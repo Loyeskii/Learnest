@@ -1,0 +1,74 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- =====================================================================
+         Learnest · light colour roles.
+
+         These are the *starting* values baked into the compiled resources so the
+         very first frame looks right.  At runtime Theming/ThemeManager.cs
+         overwrites each of these keys with the active palette (light or dark,
+         plus the user's accent colour); DynamicResource references throughout the
+         UI pick the change up immediately.
+         ===================================================================== -->
+
+    <Color x:Key="Color.Primary">#FF2563EB</Color>
+    <Color x:Key="Color.OnPrimary">#FFFFFFFF</Color>
+
+    <SolidColorBrush x:Key="Brush.Primary" Color="#FF2563EB" />
+    <SolidColorBrush x:Key="Brush.OnPrimary" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="Brush.PrimaryContainer" Color="#FFDCE9FF" />
+    <SolidColorBrush x:Key="Brush.OnPrimaryContainer" Color="#FF11305F" />
+    <SolidColorBrush x:Key="Brush.SecondaryContainer" Color="#FFE4EBFB" />
+    <SolidColorBrush x:Key="Brush.OnSecondaryContainer" Color="#FF2B3F66" />
+    <SolidColorBrush x:Key="Brush.Tertiary" Color="#FF0E8A6E" />
+    <SolidColorBrush x:Key="Brush.Error" Color="#FFC02A1F" />
+    <SolidColorBrush x:Key="Brush.OnError" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="Brush.Warning" Color="#FFC27703" />
+    <SolidColorBrush x:Key="Brush.Success" Color="#FF1B7F4B" />
+
+    <SolidColorBrush x:Key="Brush.Surface" Color="#FFFBFCFE" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainerLow" Color="#FFF6F8FB" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainer" Color="#FFF1F4F9" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainerHigh" Color="#FFEAEFF6" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainerHighest" Color="#FFE2E8F1" />
+    <SolidColorBrush x:Key="Brush.SurfaceDim" Color="#FFDCE2EA" />
+    <SolidColorBrush x:Key="Brush.OnSurface" Color="#FF141921" />
+    <SolidColorBrush x:Key="Brush.OnSurfaceVariant" Color="#FF515C6B" />
+    <SolidColorBrush x:Key="Brush.OnSurfaceFaint" Color="#FF8690A0" />
+    <SolidColorBrush x:Key="Brush.Outline" Color="#FFB9C2D0" />
+    <SolidColorBrush x:Key="Brush.OutlineVariant" Color="#FFDDE3EC" />
+    <SolidColorBrush x:Key="Brush.Scrim" Color="#99000000" />
+    <SolidColorBrush x:Key="Brush.Shadow" Color="#1F0F172A" />
+    <SolidColorBrush x:Key="Brush.InverseSurface" Color="#FF2A313D" />
+    <SolidColorBrush x:Key="Brush.InverseOnSurface" Color="#FFF3F5F9" />
+
+    <!-- Navigation rail: light and dark themes both keep a calm, slightly tinted rail -->
+    <SolidColorBrush x:Key="Brush.NavigationSurface" Color="#FFF3F6FB" />
+    <SolidColorBrush x:Key="Brush.OnNavigationSurface" Color="#FF1B222C" />
+    <SolidColorBrush x:Key="Brush.NavItemForeground" Color="#FF3C4756" />
+    <SolidColorBrush x:Key="Brush.NavItemSelectedForeground" Color="#FF1B3A78" />
+    <SolidColorBrush x:Key="Brush.NavHover" Color="#142563EB" />
+    <SolidColorBrush x:Key="Brush.NavSelected" Color="#2A2563EB" />
+
+    <SolidColorBrush x:Key="Brush.Hover" Color="#14101824" />
+    <SolidColorBrush x:Key="Brush.Selection" Color="#2A2563EB" />
+
+    <!-- Backwards friendly aliases used by a few templates -->
+    <SolidColorBrush x:Key="Accent" Color="#FF2563EB" />
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#FFFBFCFE" />
+    <SolidColorBrush x:Key="CardBrush" Color="#FFF6F8FB" />
+    <SolidColorBrush x:Key="DividerBrush" Color="#FFDDE3EC" />
+    <SolidColorBrush x:Key="DangerBrush" Color="#FFC02A1F" />
+
+    <!-- Pin widget surfaces -->
+    <SolidColorBrush x:Key="WidgetBackground" Color="#F7FFFFFF" />
+    <SolidColorBrush x:Key="WidgetBorder" Color="#FFC6D0DE" />
+    <SolidColorBrush x:Key="WidgetAlertBackground" Color="#FFFFF4F4" />
+
+    <sys:String x:Key="ThemeName">Light</sys:String>
+    <sys:Double x:Key="Double.CornerSmall">8</sys:Double>
+    <sys:Double x:Key="Double.CornerMedium">14</sys:Double>
+    <sys:Double x:Key="Double.CornerLarge">22</sys:Double>
+
+</ResourceDictionary>

@@ -1,0 +1,17 @@
+<Application x:Class="Learnest.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             ShutdownMode="OnExplicitShutdown">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Shared templates first, then one colour role dictionary as the compiled
+                     default.  At runtime Theming/ThemeManager.cs overwrites the colour keys
+                     inside Application.Resources, so light/dark and the accent colour can be
+                     changed without reloading any XAML. -->
+                <ResourceDictionary Source="/Themes/Theme.Base.xaml" />
+                <ResourceDictionary Source="/Themes/Theme.Light.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

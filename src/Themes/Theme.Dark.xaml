@@ -1,0 +1,60 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- =====================================================================
+         Learnest · dark colour roles.
+
+         ThemeManager writes palette values into Application.Resources at runtime;
+         this dictionary exists so the dark scheme can also be requested
+         declaratively (and so the pack URIs stay symmetric with the light one).
+         ===================================================================== -->
+
+    <SolidColorBrush x:Key="Brush.Primary" Color="#FF7AB0FF" />
+    <SolidColorBrush x:Key="Brush.OnPrimary" Color="#FF0B1F3A" />
+    <SolidColorBrush x:Key="Brush.PrimaryContainer" Color="#FF2B4A78" />
+    <SolidColorBrush x:Key="Brush.OnPrimaryContainer" Color="#FFDCE9FF" />
+    <SolidColorBrush x:Key="Brush.SecondaryContainer" Color="#FF2A3E5F" />
+    <SolidColorBrush x:Key="Brush.OnSecondaryContainer" Color="#FFDCE6F7" />
+    <SolidColorBrush x:Key="Brush.Tertiary" Color="#FF6FD8BC" />
+    <SolidColorBrush x:Key="Brush.Error" Color="#FFFFB4AB" />
+    <SolidColorBrush x:Key="Brush.OnError" Color="#FF6B110C" />
+    <SolidColorBrush x:Key="Brush.Warning" Color="#FFFBC04A" />
+    <SolidColorBrush x:Key="Brush.Success" Color="#FF6FDC9B" />
+
+    <SolidColorBrush x:Key="Brush.Surface" Color="#FF0E131B" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainerLow" Color="#FF141A24" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainer" Color="#FF19202B" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainerHigh" Color="#FF1F2734" />
+    <SolidColorBrush x:Key="Brush.SurfaceContainerHighest" Color="#FF262F3E" />
+    <SolidColorBrush x:Key="Brush.SurfaceDim" Color="#FF0A0E14" />
+    <SolidColorBrush x:Key="Brush.OnSurface" Color="#FFE7ECF4" />
+    <SolidColorBrush x:Key="Brush.OnSurfaceVariant" Color="#FFA6B0C0" />
+    <SolidColorBrush x:Key="Brush.OnSurfaceFaint" Color="#FF747F91" />
+    <SolidColorBrush x:Key="Brush.Outline" Color="#FF414C5E" />
+    <SolidColorBrush x:Key="Brush.OutlineVariant" Color="#FF2A3342" />
+    <SolidColorBrush x:Key="Brush.Scrim" Color="#B3000000" />
+    <SolidColorBrush x:Key="Brush.Shadow" Color="#66000000" />
+    <SolidColorBrush x:Key="Brush.InverseSurface" Color="#FFE3E8EF" />
+    <SolidColorBrush x:Key="Brush.InverseOnSurface" Color="#FF161C26" />
+
+    <SolidColorBrush x:Key="Brush.NavigationSurface" Color="#FF0A0F16" />
+    <SolidColorBrush x:Key="Brush.OnNavigationSurface" Color="#FFE7ECF4" />
+    <SolidColorBrush x:Key="Brush.NavItemForeground" Color="#FFC3CCDA" />
+    <SolidColorBrush x:Key="Brush.NavItemSelectedForeground" Color="#FFD6E4FF" />
+    <SolidColorBrush x:Key="Brush.NavHover" Color="#1FFFFFFF" />
+    <SolidColorBrush x:Key="Brush.NavSelected" Color="#337AB0FF" />
+
+    <SolidColorBrush x:Key="Brush.Hover" Color="#1FFFFFFF" />
+    <SolidColorBrush x:Key="Brush.Selection" Color="#337AB0FF" />
+
+    <SolidColorBrush x:Key="Accent" Color="#FF7AB0FF" />
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#FF0E131B" />
+    <SolidColorBrush x:Key="CardBrush" Color="#FF141A24" />
+    <SolidColorBrush x:Key="DividerBrush" Color="#FF2A3342" />
+    <SolidColorBrush x:Key="DangerBrush" Color="#FFFFB4AB" />
+
+    <SolidColorBrush x:Key="WidgetBackground" Color="#F2141C2B" />
+    <SolidColorBrush x:Key="WidgetBorder" Color="#FF334155" />
+    <SolidColorBrush x:Key="WidgetAlertBackground" Color="#F23B1D22" />
+
+</ResourceDictionary>

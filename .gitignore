@@ -1,0 +1,16 @@
+# 构建产物
+[Bb]in/
+[Oo]bj/
+dist/
+dist-standalone/
+dist-single/
+
+# 日志与临时文件
+*.log
+*.user
+*.suo
+*.tmp
+
+# 操作系统
+Thumbs.db
+desktop.ini

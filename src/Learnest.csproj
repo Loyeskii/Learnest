@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Learnest · WPF desktop application
+
+    Primary toolchain: the .NET SDK (8 or 9) with the Windows Desktop workload.
+        dotnet build src\Learnest.csproj -c Release -o dist
+
+    The application deliberately has no third party runtime dependencies: JSON and the
+    SQLite binding are implemented in this project so the shipped program is a single small
+    executable plus the container folder the user chooses.
+  -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>Learnest</AssemblyName>
+    <RootNamespace>Learnest</RootNamespace>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Product>Learnest</Product>
+    <AssemblyTitle>Learnest</AssemblyTitle>
+    <Description>A gateway to everyday management</Description>
+    <Company>Loyeskii</Company>
+    <Copyright>Copyright © 2026 Loyeskii</Copyright>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <ApplicationIcon Condition="Exists('..\assets\learnest.ico')">..\assets\learnest.ico</ApplicationIcon>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+    <StartupObject>Learnest.Program</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+    <!-- Deterministic, reproducible output; the installer only ships the program files. -->
+    <Deterministic>true</Deterministic>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- App.xaml is the ApplicationDefinition; Page items for every other XAML file come from the
+         SDK default globs (UseWPF=true).  Learnest provides its own entry point in Program.cs so
+         that the executable can also run the headless self test, therefore the generated Main is
+         not used (StartupObject below). -->
+    <ApplicationDefinition Include="App.xaml" SubType="Designer" Generator="MSBuild:Compile" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Built-in language packs are embedded so the UI can always render. -->
+    <EmbeddedResource Include="Lang\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- A portable sqlite3.dll dropped into lib\ is copied next to the executable and used in
+         preference to the Windows system winsqlite3.dll. -->
+    <None Include="..\lib\sqlite3.dll" Condition="Exists('..\lib\sqlite3.dll')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>sqlite3.dll</Link>
+    </None>
+  </ItemGroup>
+
+</Project>
