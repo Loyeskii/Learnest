@@ -18,12 +18,23 @@
 
 程序完全离线、没有云端、不发任何网络请求。第一次启动时，它会请你**新建一个容器文件夹**或**打开已有的容器文件夹**，之后你的全部数据都在那个文件夹里，随时可以整个复制走喵~
 
-![Learnest 主界面](<docs/images/Desktop Screenshot 2026.10.10 - 13.11.15.45.png>)
-![可以钉在最顶层，在桌面浮动的小组件](<docs/images/Desktop Screenshot 2026.10.10 - 13.09.12.59.png>)
-![ToDos列表](<docs/images/Desktop Screenshot 2026.10.10 - 13.37.47.73.png>)
-![Timeline](<docs/images/Desktop Screenshot 2026.10.10 - 13.08.13.43.png>)
-![日历界面](<docs/images/Desktop Screenshot 2026.10.10 - 13.08.40.70.png>)
-![设置界面](<docs/images/Desktop Screenshot 2026.10.10 - 13.08.23.59.png>)
+![Learnest 主界面](docs/images/main-window.png)
+*Learnest 主界面*
+
+![可以钉在最顶层，在桌面浮动的小组件](docs/images/floating-widget.png)
+*可以钉在最顶层，在桌面浮动的小组件*
+
+![ToDos 列表](docs/images/todos.png)
+*ToDos 列表*
+
+![Timeline](docs/images/timeline.png)
+*Timeline*
+
+![日历界面](docs/images/calendar.png)
+*日历界面*
+
+![设置界面](docs/images/settings.png)
+*设置界面*
 
 ## ***下面是Deepseek帮我写的。（懒***
 
