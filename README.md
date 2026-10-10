@@ -7,7 +7,7 @@
 
 1. ToDos and Deadlines: 可以设置待办事项和ddl，例如“高数作业1.4-1.5章节”，设置deadline到2026-10-10 23:59。内置一个万年历，无需联网，支持在电脑桌面最顶层钉住一个清单小组件，自动检测是否有项目接近ddl，标红提醒。
    
-3. Timeline: 在Timeline界面可以查看所有ToDos的时间跨度，包含创建时间、修改时间和ddl。不同分类的ToDos会显示为对应的颜色。
+2. Timeline: 在Timeline界面可以查看所有ToDos的时间跨度，包含创建时间、修改时间和ddl。不同分类的ToDos会显示为对应的颜色。
    
 3. Examination Planner: 可以添加考试信息，会显示在Timeline里面。
 
@@ -17,6 +17,13 @@
 软件使用.NET原生开发，占用空间小，性能极佳，且个人数据支持完整导入导出为压缩包（高级记录的文件也直接pack and go）。2026-10-10凌晨发布了1.0.0 release，欢迎下载使用喵~
 
 程序完全离线、没有云端、不发任何网络请求。第一次启动时，它会请你**新建一个容器文件夹**或**打开已有的容器文件夹**，之后你的全部数据都在那个文件夹里，随时可以整个复制走喵~
+
+![Learnest 主界面](<docs/images/Desktop Screenshot 2026.10.10 - 13.11.15.45.png>)
+![可以钉在最顶层，在桌面浮动的小组件](<docs/images/Desktop Screenshot 2026.10.10 - 13.09.12.59.png>)
+![ToDos列表](<docs/images/Desktop Screenshot 2026.10.10 - 13.37.47.73.png>)
+![Timeline](<docs/images/Desktop Screenshot 2026.10.10 - 13.08.13.43.png>)
+![日历界面](<docs/images/Desktop Screenshot 2026.10.10 - 13.08.40.70.png>)
+![设置界面](<docs/images/Desktop Screenshot 2026.10.10 - 13.08.23.59.png>)
 
 ## ***下面是Deepseek帮我写的。（懒***
 
